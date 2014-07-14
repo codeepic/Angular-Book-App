@@ -9,22 +9,30 @@ Guidebook.service("NoteModel", function(){
   this.addNote = function(chapterId, noteContent){
     var chapter = JSON.parse(window.localStorage.getItem(chapterId));
     if(!chapter){
-    	return;
+    	chapter = {
+    		id: chapterId,
+    		notes: []
+    	};
     }
     var now = new Date();
     var note = {
     	id: now,
-    	contentl: noteContent
+    	content: noteContent
     };
-    chapter
+    chapter.notes.push(note);
+    window.localStorage.setItem(chapterId, JSON.stringify(chapter));
   };
   this.deleteNote = function(chapterId, noteId){
-    //delete note associated with specific chapter
     var chapter = JSON.parse(window.localStorage.getItem(chapterId));
     if(!chapter || !chapter.notes){
     	return;
     }
-    chapter.notes.splice(noteId, 1);
-    window.localStorage.setItem(chapterId, JSON.stringify(chapter));
+    for(var i = 0; i < chapter.notes.length; i++){
+    	if(chapter.notes[i].id === noteId){
+    		chapter.notes.splice(noteId, 1);
+    		window.localStorage.setItem(chapterId, JSON.stringify(chapter));
+    		return;
+    	}
+    }
   };
 });

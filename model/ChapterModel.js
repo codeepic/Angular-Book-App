@@ -1,26 +1,26 @@
-GuideBook.service("ChapterModel", function(){
-  this.getChaptters = function(){
+Guidebook.service("ChapterModel", function(){
+  this.getChapters = function(){
     return [
       {
       	id: 0,
-      	title: "Chapter 1 - Introduction",
-      	summary: "Lorem ipsum dolor sit amet..."
-      },{
-      	id: 1,
-      	title: "Chapter 2 - Structure",
-      	summary: "Lorem ipsum dolor sit amet..."
-      },{
-      	id: 2,
-      	title: "Chapter 3 - Components",
-      	summary: "Lorem ipsum dolor sit amet..."
-      },{
-      	id: 3,
-      	title: "Chapter 4 - Core",
-      	summary: "Lorem ipsum dolor sit amet..."
-      },{
-      	id: 4,
-      	title: "Chapter 5 - Sample App",
-      	summary: "Lorem ipsum dolor sit amet..."
+				title: 'Chapter 1: So, What is AngularJS?',
+				summary: 'Find out what separates AngularJS from...'
+			}, {
+				id: 1,
+				title: 'Chapter 2: HelloWorld',
+				summary: 'Learn how to get up and running with...'
+			}, {
+				id: 2,
+				title: 'Chapter 3: QuickStart',
+				summary: 'Brush up on the Model-View-Controller...'
+			}, {
+				id: 3,
+				title: 'Chapter 4: Key AngularJS Features',
+				summary: 'Discover the strengths of AngularJS...'
+			}, {
+				id: 4,
+				title: 'Chapter 5: The AngularJS Community',
+				summary: 'Get to know the top contributors...'
       }
     ];
   };
