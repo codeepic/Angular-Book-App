@@ -9,6 +9,7 @@ A simple application for adding and removing notes to book chapters.
 * Views are served by router and tied with the corresponding controllers. 
 * ```localStorage``` used as data persistence layer.
 * No server.   
+
 ## Installation
 
 App routing relies on ngRoute dependency which requires server solution. You can either set up your local server or host the files remotely.
