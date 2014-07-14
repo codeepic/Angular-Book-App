@@ -1,4 +1,4 @@
-var guideBookConfig = function($routeProvider){
+var guideBookConfig = function($routeProvider){//$locationProvider
   $routeProvider
 	  .when("/", {
 	  	templateUrl: "view/chapter.html",
@@ -18,7 +18,8 @@ var guideBookConfig = function($routeProvider){
 	  })
 	  .otherwise({
 	  	redirectTo: "/" 
-	  });
+	  });  
+	//$locationProvider.HTML5Mode(true);  
 };
 var Guidebook = angular.module("Guidebook", ["ngRoute"])
   .config(guideBookConfig);
