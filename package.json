@@ -1,0 +1,16 @@
+{
+  "name": "AngularJS Book App",
+  "version": "0.0.1",
+  "description": "Simple AngularJS Book App",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeepic/Angular-Book-App"
+  },
+  "author": "Xavier GLab",
+  "bugs": {
+    "url": "https://github.com/codeepic/Angular-Book-App/issues"
+  },
+  "dependencies": {
+    "express": "~4.4.1"
+  }
+}

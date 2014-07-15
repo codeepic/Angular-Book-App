@@ -12,4 +12,6 @@ A simple application for adding and removing notes to book chapters.
 
 ## Installation
 
-App routing relies on ngRoute dependency which requires server solution. You can either set up your local server or host the files remotely.
+* type in ```bash $ npm install``` to install **express** server - more information about the framework http://expressjs.com/
+* type in ```node server/server.js``` to start the app
+* go to ```localhost:7000```
