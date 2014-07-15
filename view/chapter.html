@@ -3,10 +3,9 @@
 		<h2>{{chapter.title}}</h2>
 		<p>{{chapter.summary}}</p>
 		<p>
-			<a href='#/chapter/{{chapter.id}}'>
+			<a href="#/chapter/chapter/id">
 				{{chapter.notes.length}}
-				<span ng-show='chapter.notes.length == 1'>note</span>
-				<span ng-hide='chapter.notes.length == 1'> notes</span>
+				<ng-pluralize count="chapter.notes.length" when='{"1": "note", "other": "notes"}'></ng-pluralize>	
 			</a>
 			|
 			<a href='#/addNote/{{chapter.id}}'>add note</a>
