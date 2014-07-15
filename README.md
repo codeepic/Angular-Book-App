@@ -8,7 +8,7 @@ A simple application for adding and removing notes to book chapters.
 * Angular  ```service``` provider was used to create models.
 * Views are served by router and tied with the corresponding controllers. 
 * ```localStorage``` used as data persistence layer.
-* No server.   
+* Express server as a backend
 
 ## Installation
 
